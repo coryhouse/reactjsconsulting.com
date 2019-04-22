@@ -3,3 +3,12 @@
     Header set Cache-Control "max-age=86400, public, must-revalidate"
     #Header set Cache-Control "max-age=0, public, must-revalidate"
 </filesMatch>
+
+# Redirect HTTP to HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://reactjsconsulting.com/$1 [R=301,L]
+
+# Redirect to www
+RewriteCond %{HTTP_HOST} ^reactjsconsulting.com$ [NC]
+RewriteRule (.*) https://www.reactjsconsulting.com/$1 [R=301,L]
