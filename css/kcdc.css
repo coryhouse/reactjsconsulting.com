@@ -4,9 +4,11 @@
 
 .kcdc-active {
   display: block !important;
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  padding: 24px;
+  position: fixed;
+  z-index: 9999;
+  border: solid 1px orange;
+  bottom: 0px;
+  right: 0px;
+  padding: 8px;
   background-color: white;
 }
