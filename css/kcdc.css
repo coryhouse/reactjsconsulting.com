@@ -1,0 +1,12 @@
+.kcdc {
+  display: none;
+}
+
+.kcdc-active {
+  display: block !important;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  padding: 24px;
+  background-color: white;
+}
